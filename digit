@@ -1,0 +1,14 @@
+%{
+%}
+%%
+[0-9]+ {printf("\n it is a digit\n");}
+.+ {printf("\nnot a digit\n");}
+%%
+int yywrap(void){}
+int main()
+{
+printf("\nenter digit : ");
+yylex();
+printf("\n");
+return 0;
+}
