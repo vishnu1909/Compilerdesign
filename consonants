@@ -1,0 +1,12 @@
+%{
+#include<stdio.h>
+%}
+
+%%
+[a-zA-Z] { printf("%c\n", yytext[0]); }
+%%
+
+int main() {
+    yylex();
+    return 0;
+}
