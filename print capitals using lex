@@ -1,0 +1,15 @@
+%{
+#include<stdio.h>
+%}
+
+%%
+[A-Z] { printf("%c\n", yytext[0]); }
+.|\n ;
+%%
+
+int main() {
+    yyin = fopen("input.txt", "r");
+    yylex();
+    fclose(yyin);
+    return 0;
+}
