@@ -1,0 +1,16 @@
+%{
+int m=0;
+int x=0;
+%}
+%%
+"#include" {x++;printf("\n%s is a header file\n",yytext);}
+"#define" {m++;printf("\n%s is a macro\n",yytext);}
+%%
+int yywrap(void){}
+int main()
+{
+printf("enter : ");
+yylex();
+printf("header files:%d,""macro:%d",x,m);
+return 0;
+}
