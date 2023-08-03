@@ -10,3 +10,18 @@ int main() {
     yylex();
     return 0;
 }
+
+================================================================OUTPUT=====================================================================================
+
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex conso.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+CDHUaanu
+
+consonants are:CDHn
