@@ -12,3 +12,17 @@ yylex();
 printf("\n");
 return 0;
 }
+
+==================================================================OUTPUT==============================================================
+
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex digit.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+7
+ it is a digit
