@@ -1,13 +1,32 @@
 #include<stdio.h>
 #include<string.h>
-int main()
+int main(){
+char a[100];
+printf("enter the string");
+scanf("%s",&a);
+int l=strlen(a);
+for(int i=0;i<l;i++){
+if(a[0]=='/'&&a[1]=='/'&&a[2]!='/')
 {
-	char str[100];
-	printf("enter :");
-	gets(str);
-    if(str[0]=='/'&&(str[1]=='/'||str[1]=='*')){
-		printf("\ncomment line");
-	}else{
-		printf("\nnot a comment line");
-	}
+	printf("it is a comment");
+	break;
 }
+else if(a[0]=='/'&&a[1]=='*')
+{
+	printf("it is a comment");
+	break;
+}
+else
+{
+	printf("it is not a comment");
+	break;
+}
+}
+}
+=======================================================OUTPUT=========================================================================================
+
+1) enter the string//hi hello//
+   it is a comment
+
+2) enter the string hi hello
+   it is not a comment
