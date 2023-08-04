@@ -16,7 +16,7 @@ return 0;
 
 C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
 
-C:\Users\nanib>flex positive.l.txt
+C:\Users\nanib>flex url.l.txt
 
 C:\Users\nanib>set path=C:\MinGW\bin
 
