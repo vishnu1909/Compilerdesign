@@ -33,3 +33,12 @@ int main()
     printf(" A->%s",modifiedGram);
     printf("\n X->%s\n",newGram);
 }
+
+=======================================================================================================
+Output:
+Enter grammer:
+E->aE+bcD
+E->aE+cBD
+
+E=aE+X
+X=bcD | cBD
