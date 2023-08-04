@@ -17,4 +17,15 @@ yylex();
 }
 ================================================================OUTPUT===============================================================
 
-  
+
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex url.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a  
+enter your date of birth: 19/08/2004
+valid Date of Birth
