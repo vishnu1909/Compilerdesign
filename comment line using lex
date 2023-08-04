@@ -1,0 +1,34 @@
+%{
+int c=0;
+%}
+%%
+[/*a-zA-Z]+[//A-Za-z] {c++;printf("\n %s is a comment line \n",yytext);}
+.+ {printf("The Given input is not comment line");}
+%%
+int yywrap(){}
+int main()
+{
+printf("enter : ");
+yylex();
+printf("\nno of comments:%d",c);
+return 0;
+}
+===========================================================================================================
+OUTPUT:
+
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex comment.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+enter : //vjhjdvmd
+
+ //vjhjdvmd is a comment line
+
+/*dfns
+
+ /*dfns is a comment line
