@@ -23,3 +23,13 @@ for(int i=0;i<l;i++){
 	}
 }
 }
+
+=============================================================OUTPUT======================================================================
+
+enter the stringY=x*z
+symbol  value   address  token
+Y       8        6487456         identifier
+=                6487457          operator
+x       10       6487458          identifier
+*                6487459          operator
+z       5        6487460         identifier
