@@ -14,3 +14,35 @@ yylex();
 printf("header files:%d,""macro:%d",x,m);
 return 0;
 }
+=======================================================================================
+Output:
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex macroheader.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+enter : #include<stdio.h>
+
+#include<is a header file
+<stdio.h>
+#include<math.h>
+
+#include is a header file
+<math.h>
+#define v=10
+
+#define is a macro
+v=10
+int main()
+int main()
+{
+{
+printf("%d",v);
+printf("%d",v);
+}
+}
+header files:2,macro:1
