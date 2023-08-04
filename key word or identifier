@@ -1,0 +1,36 @@
+%{
+#include <stdio.h>
+%}
+
+
+%%
+"int"|"float"|"if"|"else"|"while"|"do while"|"printf"|"scanf"|"return"    { printf("Keyword: %s\n", yytext); }
+[a-zA-Z][a-zA-Z0-9]*                 { printf("Identifier: %s\n", yytext); }
+[ \t\n]                             ; /* Skip whitespace and newline */
+.                                   ; /* Skip any other characters */
+%%
+
+int yywrap(){}
+
+int main() {
+    yylex();
+    return 0;
+}
+========================================================================================================================
+OUTPUT:
+
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex keyword.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+a+b+c if else
+Identifier: a
+Identifier: b
+Identifier: c
+Keyword: if
+Keyword: else
