@@ -24,3 +24,14 @@ void main()  {
     else
         printf("The Given Grammar has no Left Recursion");
 }
+=========================================================================================================
+Output:
+Enter Number of Production : 2
+Enter the grammar as E->E-A :
+A->A+B
+B->AC
+
+GRAMMAR : : : A->A+B is left recursive.
+ can't be reduced
+
+GRAMMAR : : : B->AC is not left recursive.
