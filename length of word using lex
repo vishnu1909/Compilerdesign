@@ -13,3 +13,19 @@ int main() {
     yylex();
     return 0;
 }
+==============================================================================================
+OUTPUT:
+
+
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex comment.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+comipler
+word:compiler
+length:8
