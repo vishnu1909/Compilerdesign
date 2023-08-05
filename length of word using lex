@@ -1,0 +1,15 @@
+%{
+#include <stdio.h>
+%}
+
+/* Definitions for words */
+%%
+[a-zA-Z]+   { printf("Word: %s, Length: %d\n", yytext, yyleng); }
+[ \t\n]     ; /* Skip whitespace and newline */
+.           ; /* Skip any other characters */
+%%
+
+int main() {
+    yylex();
+    return 0;
+}
