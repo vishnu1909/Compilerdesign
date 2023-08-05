@@ -31,3 +31,18 @@ int yywrap(void) {
 =======================================================================
 OUTPUT:
 
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex seperate.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+co4$#
+c:word
+o:word
+4:number
+#:special character
+$:special character
