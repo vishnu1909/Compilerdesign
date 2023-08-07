@@ -26,12 +26,8 @@ void main()  {
 }
 =========================================================================================================
 Output:
-Enter Number of Production : 2
-Enter the grammar as E->E-A :
-A->A+B
-B->AC
-
-GRAMMAR : : : A->A+B is left recursive.
- can't be reduced
-
-GRAMMAR : : : B->AC is not left recursive.
+Enter the productions: E->E+E|T
+The productions after eliminating Left Recursion are:
+E->+EE'
+E'->TE'
+E->ε
