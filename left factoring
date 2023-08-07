@@ -37,8 +37,7 @@ int main()
 =======================================================================================================
 Output:
 Enter grammer:
-E->aE+bcD
-E->aE+cBD
+a->bE+acF|bE+f
+Grammer without left factoring:
+A->bE+X
 
-E=aE+X
-X=bcD | cBD
