@@ -20,3 +20,21 @@ yylex();
 return 0;
 }
 ==================================================================================================
+C:\Users\nanib>set path=C:\Program Files (x86)\GnuWin32\bin
+
+C:\Users\nanib>flex comment.l.txt
+
+C:\Users\nanib>set path=C:\MinGW\bin
+
+C:\Users\nanib>gcc lex.yy.c
+
+C:\Users\nanib>a
+
+1 #include<stdio.h>
+2 // Driver Code
+3 int main()
+4 {
+5 int a; 
+6 /* we have to delete comments */
+7 return 0;
+8 }
