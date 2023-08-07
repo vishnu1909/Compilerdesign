@@ -1,14 +1,22 @@
 %{
-#include<stdio.h>
-int line_num = 1;
+int line_number = 1; 
 %}
 
 %%
-\n { printf("%d: ", line_num++); }
-.|\n { ECHO; }
+{line} { printf("%10d %s", line_number++, yytext); } 
+  
 %%
+  
+int yywrap(){} 
+  
+int main(int argc, char*argv[])
+{
+extern FILE *yyin;   
+  
+yyin = fopen("testtest.c","r"); 
 
-int main() {
-    yylex();
-    return 0;
+yylex();  
+  
+return 0;
 }
+==================================================================================================
