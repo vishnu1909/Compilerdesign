@@ -6,8 +6,8 @@
 %%
 "int"|"float"|"if"|"else"|"while"|"do while"|"printf"|"scanf"|"return"    { printf("Keyword: %s\n", yytext); }
 [a-zA-Z][a-zA-Z0-9]*                 { printf("Identifier: %s\n", yytext); }
-[ \t\n]                             ; /* Skip whitespace and newline */
-.                                   ; /* Skip any other characters */
+[ \t\n]                             ; 
+.                                   ; 
 %%
 
 int yywrap(){}
